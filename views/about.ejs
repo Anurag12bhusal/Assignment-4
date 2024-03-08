@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Lego Collection</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-300 to-purple-400">
+
+<nav class="navbar bg-gray-800 text-white h-16">
+    <div class="container mx-auto px-4 flex justify-between items-center h-full">
+        <a href="/" class="logo text-xl font-bold">Lego Collection</a>
+        <a href="/about" class="active text-lg font-bold">About</a>
+        <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="btn m-1">Themes</div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="/lego/sets?theme=theme1">Theme 1</a></li>
+                <li><a href="/lego/sets?theme=theme2">Theme 2</a></li>
+                <li><a href="/lego/sets?theme=theme3">Theme 3</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mx-auto px-4">
+    <div class="hero my-8 text-center">
+        <h1 class="text-3xl font-bold">About</h1>
+        <p class="text-lg text-gray-700">All about me</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="text-center">
+            <img src="https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc" alt="Anurag Bhusal" class="mx-auto-full h-60 w-60 object-cover">
+        </div>
+
+
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Anurag Bhusal</h2>
+            <p class="text-lg text-gray-700">I am a computer science student with a passion for coding, gaming, and traveling.</p>
+            <p class="text-lg text-gray-700">In my free time, I enjoy playing video games, exploring new technologies, and visiting new places.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

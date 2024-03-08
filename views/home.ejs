@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Collection</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-300 to-white-200">
+<%- include('partials/navgar') %>
+
+
+<div class="container mx-auto px-4">
+    <div class="hero my-8 text-center">
+        <h1 class="text-3xl font-bold">Welcome to the Lego Collection</h1>
+        <p class="text-lg text-gray-700">Explore our vast collection of Lego sets.</p>
+    </div>
+
+
+    <div class="explore-button text-center">
+        <a href="/lego/sets" class="btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block">Explore Sets</a>
+    </div>
+
+
+    <div class="my-8"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <div class="card bg-white shadow-md rounded-md p-4">
+            <img src="https://cdn.rebrickable.com/media/sets/001-1.jpg" alt="Lego Set 1" class="w-full rounded-md mb-4">
+            <h2 class="text-lg font-semibold my-2">Gears</h2>
+            <p class="text-gray-600">Released: 1965 | Parts: 43</p>
+            <a href="/lego/sets/001-1" class="btn mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block">View Details</a>
+        </div>
+        
+
+        <div class="card bg-white shadow-md rounded-md p-4">
+            <img src="https://cdn.rebrickable.com/media/sets/0011-2.jpg" alt="Lego Set 2" class="w-full rounded-md mb-4">
+            <h2 class="text-lg font-semibold my-2">Town Mini-Figures</h2>
+            <p class="text-gray-600">Released: 1979 | Parts: 12</p>
+            <a href="/lego/sets/0011-2" class="btn mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block">View Details</a>
+        </div>
+        
+
+        <div class="card bg-white shadow-md rounded-md p-4">
+            <img src="https://cdn.rebrickable.com/media/sets/0011-3.jpg" alt="Lego Set 3" class="w-full rounded-md mb-4">
+            <h2 class="text-lg font-semibold my-2">Castle 2 for 1 Bonus Offer</h2>
+            <p class="text-gray-600">Released: 1987 | Parts: 0</p>
+            <a href="/lego/sets/0011-3" class="btn mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block">View Details</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

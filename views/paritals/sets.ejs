@@ -1,0 +1,30 @@
+
+<%- include('partials/header') %>
+<main class="container mx-auto px-4">
+    <h1 class="text-2xl font-bold mb-4">Collection</h1>
+    <table class="table w-full">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Theme</th>
+                <th>Year</th>
+                <th>Num Parts</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% sets.forEach((set) => { %>
+                <tr>
+                    <td><img src="<%= set.img_url %>" alt="<%= set.name %>" class="w-16 h-16"></td>
+                    <td><%= set.name %></td>
+                    <td><a href="/lego/sets?theme=<%= set.theme %>" class="btn btn-sm btn-primary"><%= set.theme %></a></td>
+                    <td><%= set.year %></td>
+                    <td><%= set.num_parts %></td>
+                    <td><a href="/lego/sets/<%= set.set_num %>" class="btn btn-sm btn-primary">Details</a></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>
+<%- include('partials/footer') %>
